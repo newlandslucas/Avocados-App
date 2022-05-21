@@ -11,6 +11,10 @@
 		94678C7A283959450048360A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94678C79283959450048360A /* ContentView.swift */; };
 		94678C7C283959470048360A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94678C7B283959470048360A /* Assets.xcassets */; };
 		94678C7F283959470048360A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94678C7E283959470048360A /* Preview Assets.xcassets */; };
+		94678C8A2839653A0048360A /* AvocadosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94678C892839653A0048360A /* AvocadosView.swift */; };
+		94678C8C283965550048360A /* RipeningStagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94678C8B283965550048360A /* RipeningStagesView.swift */; };
+		94678C8E2839656A0048360A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94678C8D2839656A0048360A /* SettingsView.swift */; };
+		94678C90283965980048360A /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94678C8F283965980048360A /* AppView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		94678C79283959450048360A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		94678C7B283959470048360A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94678C7E283959470048360A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		94678C8528395E970048360A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		94678C892839653A0048360A /* AvocadosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocadosView.swift; sourceTree = "<group>"; };
+		94678C8B283965550048360A /* RipeningStagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningStagesView.swift; sourceTree = "<group>"; };
+		94678C8D2839656A0048360A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		94678C8F283965980048360A /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +60,11 @@
 		94678C76283959450048360A /* Avocados */ = {
 			isa = PBXGroup;
 			children = (
+				94678C88283965130048360A /* Data */,
+				94678C872839650E0048360A /* Model */,
+				94678C86283965080048360A /* View */,
+				94678C8528395E970048360A /* Info.plist */,
 				94678C77283959450048360A /* AvocadosApp.swift */,
-				94678C79283959450048360A /* ContentView.swift */,
 				94678C7B283959470048360A /* Assets.xcassets */,
 				94678C7D283959470048360A /* Preview Content */,
 			);
@@ -65,6 +77,32 @@
 				94678C7E283959470048360A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		94678C86283965080048360A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94678C79283959450048360A /* ContentView.swift */,
+				94678C892839653A0048360A /* AvocadosView.swift */,
+				94678C8B283965550048360A /* RipeningStagesView.swift */,
+				94678C8D2839656A0048360A /* SettingsView.swift */,
+				94678C8F283965980048360A /* AppView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		94678C872839650E0048360A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		94678C88283965130048360A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94678C8E2839656A0048360A /* SettingsView.swift in Sources */,
 				94678C7A283959450048360A /* ContentView.swift in Sources */,
+				94678C90283965980048360A /* AppView.swift in Sources */,
+				94678C8C283965550048360A /* RipeningStagesView.swift in Sources */,
 				94678C78283959450048360A /* AvocadosApp.swift in Sources */,
+				94678C8A2839653A0048360A /* AvocadosView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,9 +311,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Avocados/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Avocados/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -298,9 +340,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Avocados/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Avocados/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
