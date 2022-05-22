@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var headers: [Header] = headersData
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .center, spacing: 20) {
@@ -15,24 +18,34 @@ struct ContentView: View {
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(alignment: .top, spacing: 0) {
-                        HeaderView()
+                        ForEach(headers) { item in
+                            HeaderView(header: item)
+                        }
                     }
                 }
                 
+                //MARK: - DISHES
+                
+                Text("Pratos com Abacate")
+                    .fontWeight(.bold)
+                    .modifier(TitleModifier())
+                
+                DishesView()
+                    .frame(maxWidth: 640)
                 
                 // MARK: - FOOTER
                 
                 VStack(alignment: .center, spacing: 20) {
                     Text("Tudo sobre Abacates")
-                        .font(.system(.title, design: .serif))
                         .fontWeight(.bold)
-                        .foregroundColor(Color("ColorGreenAdaptive"))
-                    .padding(8)
-                    
+                        .modifier(TitleModifier())
+                     
+                      
                     Text("Tudo o que você queria saber sobre abacates, mas tinha medo de perguntar.")
                         .font(.system(.body, design: .serif))
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.gray)
+                        .frame(minHeight: 60)
                 }
                 .frame(maxWidth: 640)
                 .padding()
@@ -44,8 +57,17 @@ struct ContentView: View {
     }
 }
 
+struct TitleModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.system(.title, design: .serif))
+            .padding(8)
+            .foregroundColor(Color("ColorGreenAdaptive"))
+    }
+}
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(headers: headersData)
     }
 }
