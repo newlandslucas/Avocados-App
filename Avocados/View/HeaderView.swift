@@ -8,6 +8,15 @@
 import SwiftUI
 
 struct HeaderView: View {
+    
+    @State private var showHeadline: Bool = false
+    
+    var slideInAnimaion: Animation {
+        Animation.spring(response: 1.5, dampingFraction: 0.5, blendDuration: 0.5)
+            .speed(1)
+            .delay(0.25)
+    }
+    
     var body: some View {
         ZStack {
             Image("avocado-slice-1")
@@ -41,7 +50,11 @@ struct HeaderView: View {
             .background(Color("ColorBlackTransparentLight"))
             }
             .frame(width: 285, height: 105, alignment: .center)
-            .offset(x: -64, y: 75)
+            .offset(x: -64, y:  showHeadline ? 75 : 220)
+            .animation(slideInAnimaion)
+            .onAppear {
+                self.showHeadline.toggle()
+            }
             
         }
         .frame(width: 480, height: 320, alignment: .center)
@@ -52,5 +65,6 @@ struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
         HeaderView()
             .previewLayout(.sizeThatFits)
+            .environment(\.colorScheme, .dark)
     }
 }
