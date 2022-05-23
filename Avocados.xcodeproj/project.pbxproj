@@ -27,6 +27,7 @@
 		94678CA6283B09A60048360A /* RecipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94678CA5283B09A60048360A /* RecipeCardView.swift */; };
 		94678CA8283B0F640048360A /* RecipeRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94678CA7283B0F640048360A /* RecipeRatingView.swift */; };
 		94678CAA283B0FF20048360A /* RecipeCookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94678CA9283B0FF20048360A /* RecipeCookingView.swift */; };
+		94678CAC283B109E0048360A /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94678CAB283B109E0048360A /* RecipeDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		94678CA5283B09A60048360A /* RecipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCardView.swift; sourceTree = "<group>"; };
 		94678CA7283B0F640048360A /* RecipeRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRatingView.swift; sourceTree = "<group>"; };
 		94678CA9283B0FF20048360A /* RecipeCookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCookingView.swift; sourceTree = "<group>"; };
+		94678CAB283B109E0048360A /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				94678CA5283B09A60048360A /* RecipeCardView.swift */,
 				94678CA7283B0F640048360A /* RecipeRatingView.swift */,
 				94678CA9283B0FF20048360A /* RecipeCookingView.swift */,
+				94678CAB283B109E0048360A /* RecipeDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				94678CA6283B09A60048360A /* RecipeCardView.swift in Sources */,
 				94678CA4283B069A0048360A /* RecipeData.swift in Sources */,
 				94678C92283ACBF80048360A /* HeaderView.swift in Sources */,
+				94678CAC283B109E0048360A /* RecipeDetailView.swift in Sources */,
 				94678C9E283B02EC0048360A /* FactData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
