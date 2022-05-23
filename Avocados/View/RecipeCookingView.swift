@@ -1,0 +1,36 @@
+//
+//  RecipeCookingView.swift
+//  Avocados
+//
+//  Created by Lucas Newlands on 22/05/22.
+//
+
+import SwiftUI
+
+struct RecipeCookingView: View {
+    
+    var recipe: Recipe
+    
+    var body: some View {
+        HStack(alignment: .center, spacing: 12) {
+            HStack(alignment: .center, spacing: 2) {
+                Image(systemName: "person.2")
+                Text("Serve: \(recipe.serves) pessoas.")
+            }
+            
+            HStack(alignment: .center, spacing: 2) {
+                Image(systemName: "clock")
+                Text("Preparação: \(recipe.preparation) minutos.")
+            }
+        }
+        .font(.footnote)
+        .foregroundColor(Color.gray)
+    }
+}
+
+struct RecipeCookingView_Previews: PreviewProvider {
+    static var previews: some View {
+        RecipeCookingView(recipe: recipesData[0])
+            .previewLayout(.fixed(width: 320, height: 60))
+    }
+}
