@@ -22,6 +22,9 @@
 		94678C9A283B005E0048360A /* FactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94678C99283B005E0048360A /* FactsView.swift */; };
 		94678C9C283B02C40048360A /* FactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94678C9B283B02C40048360A /* FactModel.swift */; };
 		94678C9E283B02EC0048360A /* FactData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94678C9D283B02EC0048360A /* FactData.swift */; };
+		94678CA2283B06270048360A /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94678CA1283B06270048360A /* RecipeModel.swift */; };
+		94678CA4283B069A0048360A /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94678CA3283B069A0048360A /* RecipeData.swift */; };
+		94678CA6283B09A60048360A /* RecipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94678CA5283B09A60048360A /* RecipeCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		94678C99283B005E0048360A /* FactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsView.swift; sourceTree = "<group>"; };
 		94678C9B283B02C40048360A /* FactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactModel.swift; sourceTree = "<group>"; };
 		94678C9D283B02EC0048360A /* FactData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactData.swift; sourceTree = "<group>"; };
+		94678CA1283B06270048360A /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		94678CA3283B069A0048360A /* RecipeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeData.swift; sourceTree = "<group>"; };
+		94678CA5283B09A60048360A /* RecipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,7 @@
 				94678C91283ACBF80048360A /* HeaderView.swift */,
 				94678C97283ADC7F0048360A /* DishesView.swift */,
 				94678C99283B005E0048360A /* FactsView.swift */,
+				94678CA5283B09A60048360A /* RecipeCardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -113,6 +120,7 @@
 			children = (
 				94678C93283AD0C60048360A /* HeaderModel.swift */,
 				94678C9B283B02C40048360A /* FactModel.swift */,
+				94678CA1283B06270048360A /* RecipeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -122,6 +130,7 @@
 			children = (
 				94678C95283AD11D0048360A /* HeaderData.swift */,
 				94678C9D283B02EC0048360A /* FactData.swift */,
+				94678CA3283B069A0048360A /* RecipeData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -203,10 +212,13 @@
 				94678C78283959450048360A /* AvocadosApp.swift in Sources */,
 				94678C8A2839653A0048360A /* AvocadosView.swift in Sources */,
 				94678C94283AD0C60048360A /* HeaderModel.swift in Sources */,
+				94678CA2283B06270048360A /* RecipeModel.swift in Sources */,
 				94678C96283AD11D0048360A /* HeaderData.swift in Sources */,
 				94678C98283ADC7F0048360A /* DishesView.swift in Sources */,
 				94678C9C283B02C40048360A /* FactModel.swift in Sources */,
 				94678C9A283B005E0048360A /* FactsView.swift in Sources */,
+				94678CA6283B09A60048360A /* RecipeCardView.swift in Sources */,
+				94678CA4283B069A0048360A /* RecipeData.swift in Sources */,
 				94678C92283ACBF80048360A /* HeaderView.swift in Sources */,
 				94678C9E283B02EC0048360A /* FactData.swift in Sources */,
 			);
